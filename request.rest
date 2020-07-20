@@ -1,6 +1,8 @@
+//get all user
 GET http://localhost:3000/users
 
 ###
+//register user
 POST http://localhost:3000/users
 Content-Type: application/json
 
@@ -10,6 +12,7 @@ Content-Type: application/json
 }
 
 ###
+//Login
 POST http://localhost:3000/users/login
 Content-Type: application/json
 
@@ -19,5 +22,26 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiaml3byIsImlhdCI6MTU5NTI2MDgzMH0.9yZASXytUQ2gXTRAxdx6sGq4r3mGZKpjTU12hKLklI0
+//create create a post
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiaml3byIsImlhdCI6MTU5NTI2NDQ0NiwiZXhwIjoxNTk1MjY0NDc2fQ.5ZiFq_OOWa_SodM_KQkYpJzldLY6ztkVBDUMDusaqxQ
+
+
+###
+//create refreshToken
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiaml3byIsImlhdCI6MTU5NTI2NDI4OH0.CUiqIHmshLNU6sjitnJs9UXbhG6Pu9fw6xWvVX7cXBs"
+}
+
+
+###
+//Logout
+DELETE http://localhost:3000/logout
+Content-Type: application/json
+
+{
+    "token": ""
+}
