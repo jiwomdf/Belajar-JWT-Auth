@@ -17,3 +17,7 @@ Content-Type: application/json
     "name": "jiwo",
     "password": "password"
 }
+
+###
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiaml3byIsImlhdCI6MTU5NTI2MDgzMH0.9yZASXytUQ2gXTRAxdx6sGq4r3mGZKpjTU12hKLklI0
